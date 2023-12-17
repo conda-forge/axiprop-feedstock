@@ -9,7 +9,7 @@ source:
   sha256: 60c35fa42b5d887aad6c241fc22fcd57df94e8ef8912de0a2f57443a8292b43c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,6 +24,12 @@ requirements:
     - scipy
 
 test:
+  requires:
+    - python
+    - pytest
+    - scikit-image
+  source_files:
+    - tests/
   imports:
     - axiprop
 
