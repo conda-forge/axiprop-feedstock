@@ -20,6 +20,7 @@ requirements:
     - setuptools
   run:
     - numpy
+    - h5py
     - python >=3.6
     - scipy
 
