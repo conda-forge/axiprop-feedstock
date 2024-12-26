@@ -9,24 +9,24 @@ source:
   sha256: e7ddc18bc4228e206d7dab442ad24a09425cc6aa69033f4c4d1f21b6487b7711
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
   run:
     - numpy
     - h5py
-    - python >=3.6
+    - python >={{ python_min }}
     - scipy
 
 test:
   requires:
-    - python
+    - python {{ python_min }}
     - pytest
     - scikit-image
   source_files:
