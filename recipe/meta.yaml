@@ -1,4 +1,4 @@
-{% set version = "0.5.5" %}
+{% set version = "0.5.7" %}
 
 package:
   name: axiprop
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/hightower8083/axiprop/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 464c3f4db29f99f5d58151ac8883e718e5d29746ba601b106e4d9950dc749a59
+  sha256: eca96ff7705a7ed7c6059c9681bf6614900f413fad4820afef3913d36adee6dc
 
 build:
   number: 0
